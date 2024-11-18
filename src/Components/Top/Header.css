@@ -1,4 +1,4 @@
-   .header{
+.header{
     width: 100%;
     position: fixed;
     top: 0;
@@ -21,7 +21,8 @@
    }
 
    .nav-list{
-     display: flex;
+     display: grid;
+     grid-template-columns: repeat(7, 1fr);
      column-gap: 2rem;
    }
 
@@ -60,3 +61,4 @@
     }
     
    }
+    
