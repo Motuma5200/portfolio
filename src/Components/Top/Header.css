@@ -3,6 +3,7 @@
     position: fixed;
     top: 0;
     left: 0;
+    right: 0;
     z-index: var(--z-fixed);
     background-color: var(--body-color);
    }
@@ -12,28 +13,48 @@
     display: flex;
     justify-content:  space-between;
     align-items: center;
-    column-gap: 1rem;
+    column-gap: 0.5rem;
    }
 
    .nav-logo, .nav__toggle{
     color: var(--tittle-color);
     font-weight: var(--font-medium);
-   }
+   }  
 
-   .nav-list{
-     display: grid;
-     grid-template-columns: repeat(7, 1fr);
-     column-gap: 2rem;
-   }
+.nav-list
+{
+    display: flex;
+    column-gap: 3rem;
+}
 
-  
-   .active-link,
-   .nav-link :hover{
+
+
+.nav-link{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: var(--small-font-size);
+    color: var(--tittle-color);
+    font-weight: var(--font-medium);
+    transition: 3s;
+}
+
+.nav_close, .nav__toggle
+, .nav__icon{ 
+    display: none;
+}
+
+/*  Active menu*/
+
+.active-link, .nav-link :hover{
     color: var(--tittle-color-dark);
-    font-weight: var(--font-semi-bold);
-   }
 
-   @media screen and (max-width: 768px) {
+}
+
+
+/* ----Breack point   */
+
+@media screen and (max-width: 768px) {
     .header{
         top: initial;
         bottom: 0;
@@ -41,6 +62,7 @@
 
     .nav{
         height: var(--header-height);
+        
     }
 
     .nav-menu{
@@ -48,17 +70,62 @@
         bottom: -100%;
         left: 0;
         width: 100%;
+        background-color: var(--container-color);
         padding: 2rem 1.5rem 4rem;
-        box-shadow: 0 -1px 4rem rgb(0, 0, 0, 0.15);
-        border-radius: 2rem 1rem 0 0;
-        transition: 3s;
+       
+        box-shadow: 3px, 1px 4px rgba(0, 0, 0, 0.167);
+        border-radius: 1.rem 1.5rem 0 0;
+        transition: 1s;
+    }
+
+    .show_menu{
+        bottom: 0;
     }
 
     .nav-list{
         display: grid;
-        grid-template-columns: repeat(3,1fr);
-        gap: 2rem ;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+    }
+
+    .nav__icon{
+        font-size: 1.2rem;
+    }
+
+    .nav_close{
+        position: fixed;
+        right: 1.25rem;
+        bottom: .5rem;
+        font-size: 1.5rem;
+        cursor: pointer;
+        color: var(--tittle-color);
+    }
+
+    .nav_close:hover{
+        columns: var(--tittle-color-dark);
+    }
+
+    .nav__toggle{
+        font-size: 1.2rem;
+        cursor: pointer;
+    }
+
+    .nav_close,
+    .nav__icon,
+    .nav__toggle{
+        display: block;
     }
     
-   }
+}
+
+
+@media screen and (max-width: 35px){
+    .nav-menu{
+         padding: 2rem 0.25rem 4rem;
+    }
+
+    .nav-list{
+        column-gap: 0;
+    }
     
+}
