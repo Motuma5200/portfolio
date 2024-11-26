@@ -105,20 +105,21 @@ img{
 
 .section{
   padding: 6rem 0 2rem;
+  
 }
 
-.section_tittle{
+.section-tittle{
   font-size: var(--h1-font-size);
   color: var(--tittle-color);
 }
 
-.section_subtittle{
+.section-subtittle{
   display: block;
   font-size: var(--small-font-size);
   margin-bottom: 4rem;
 }
 
-.section_tittle, .section_subtittle{
+.section-tittle, .section-subtittle{
   text-align: center;
 }
 
@@ -141,6 +142,7 @@ img{
   background-color: var(--tittle-color);
   padding: 1.25rem 2rem;
   font-weight: var(--font-medium);
+  color: #fff;
 }
 
 .button :hover {
