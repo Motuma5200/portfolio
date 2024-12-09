@@ -14,7 +14,7 @@ function Header() {
 
                     <li className="nav-item active-link ">
                         <a href="#home" className="nav-link">
-                            <i class="uil uil-house-user nav__icon"></i> Home
+                            <i className="uil uil-house-user nav__icon"></i> Home
                         </a>
                     </li>
 

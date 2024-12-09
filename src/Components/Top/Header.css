@@ -119,7 +119,7 @@
 }
 
 
-@media screen and (max-width: 35px){
+@media screen and (max-width: 350px){
     .nav-menu{
          padding: 2rem 0.25rem 4rem;
     }

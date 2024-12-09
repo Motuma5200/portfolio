@@ -1,3 +1,4 @@
+
 .home-container{
     row-gap: 3rem;
 }
@@ -32,10 +33,25 @@
     
     margin-bottom: var(--mb-0-5);
 }
-
+ 
 .home-subtittle{
-    padding-left: 3cap;
+    position: relative;
+    font-size: var(--h3-font-size);
+    font-weight: var(--font-normal);
+    padding-left: 3rem;
     margin-bottom: var(--mb-0-5);
+}
+
+
+.home-subtittle::before{
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 1px;
+    background-color: var(--text-color);
+    left: 0;
+    top: 1rem;
+    bottom: 1rem;
 }
 
 .home-description{
@@ -44,9 +60,16 @@
   
 }
 
+.button{
+    border-radius: 1rem;
+}
+
  .home-scroll{
     margin-left: 18rem;
     padding-top: 5rem;
+ }
+ .home-scroll-name{
+    padding-bottom: 5rem;
  }
 
 .home-img{
@@ -54,7 +77,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    box-shadow: inset 0 0 0 9px rgb(255, 255, 255 /30%);
+    box-shadow: inset 0 0 0 9px rgb(255 255 255 /30%);
     order: 1;
     justify-self: center;
     width: 300px;
@@ -75,5 +98,83 @@
    100%{
         border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
     }
+    
+}
+
+@media screen and  (max-width: 992px){ 
+.home-content{
+    grid-template-columns: 100px repeat(2, 1fr);
+    column-gap: 1.5rem;
+}
+
+.home-subtittle{
+   margin-bottom: var(--mb-1);
+    padding-left: 2rem;
+
+}
+
+.home-subtittle::before{
+    width: 35px;
+    height: 0.7px;
+}
+
+.home-description{
+    max-width: initial;
+    margin-bottom: var(--mb-2-5);
+
+}
+
+.home-img{
+    box-shadow: inset 0 0 0 7px rgb(255 255 255 /30%);
+    width: 250px;
+    height: 200px;
+
+}
+
+.home-scroll{
+    margin-left: 13rem;
+   
+ }
+
+.button{
+    font-size: var(--small-font-size);
+    width: 150px;
+    height: 70px;
+}
+    
+}
+
+
+@media screen and (max-width: 768px) {
+
+    .home-content{
+        grid-template-columns: 0.5fr 2fr;
+        padding-top: 3rem;
+    }
+
+    .home-img{
+        box-shadow: inset 0 0 0 5px rgb(255 255 255 /30%);
+        width: 200px;
+        height: 150px;
+        order: initial;
+        justify-self: initial;
+ 
+    }
+
+    .home-data{
+        grid-column: 1/3;
+    }
+ .home-scroll{
+    display: none;
+ }
+    
+}
+
+
+@media screen and (max-width: 768px) {
+    
+}
+
+@media screen and (max-width: 768px) {
     
 }
