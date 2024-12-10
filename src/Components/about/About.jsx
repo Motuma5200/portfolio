@@ -23,7 +23,7 @@ function About() {
               my clients are happy with the projects carried out.
             </p>
 
-            <a  download='' href={myCv} className="button button-flex">
+            <a  download='' href={myCv} className="button button_flex">
               Download CV
             </a>
 

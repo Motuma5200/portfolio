@@ -85,7 +85,9 @@
 
     .about-info, .about-description{
         padding: 0;
+    
     }
+
   
   
   }
@@ -93,7 +95,10 @@
   
   @media screen and (max-width: 350px) {
   
-   .about-info{
-    grid-template-columns: repeat(2, 1fsr);
+    .about-info{
+    grid-template-columns: repeat(2, 1fr);
    }
+
+   
+
   }
