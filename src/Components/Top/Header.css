@@ -46,8 +46,9 @@
 
 /*  Active menu*/
 
-.active-link, .nav-link :hover{
-    color: var(--tittle-color-dark);
+.nav-link:hover{
+    color: green;
+    font-weight: 500px;
 
 }
 

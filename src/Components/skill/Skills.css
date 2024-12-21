@@ -41,7 +41,63 @@
 }
 
 .skill-level{
+
     font-size: var(--tiny-font-size);
 }
 
+
+
+@media screen and (max-width: 992px) {
+    .skills-container{
+        column-gap: 1rem;
+
+    }
+
+    .skills .uil-cloud-question{
+        font-size: 1.2rem;
+    }
+    
+  }
+
+  @media screen and (max-width: 768px) {
+
+    .skill-name{
+        font-size: var(--small-font-size);
+        font-weight: 200px;
+        
+    }
+
+    .skills-group{
+        grid-template-columns: max-content;
+        row-gap: 1.5rem;
+        justify-content: center;
+    }
+
+   
+  }
+  
+
+  
+  @media screen and (max-width: 576px) {
+   
+
+  
+  }
+  
+  
+  @media screen and (max-width: 350px) {
+    .skills-container{
+        grid-template-columns: max-content;
+        row-gap: 1.5rem;
+        justify-content: center;
+    }
+
+    .skills-group{
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 1.5rem;
+        row-gap: 1.5rem;
+    }
+
+
+  }
 

@@ -16,7 +16,6 @@
     row-gap: 1rem;
     justify-content: center
     ;
-
 }
 
 .home-social-icon{
@@ -154,19 +153,24 @@
 
     .home-img{
         box-shadow: inset 0 0 0 5px rgb(255 255 255 /30%);
-        width: 200px;
-        height: 150px;
+        width: 250px;
+        height: 200px;
         order: initial;
-        justify-self: initial;
+        justify-self: center;
  
     }
 
     .home-data{
         grid-column: 1/3;
+        justify-self: center;
     }
  .home-scroll{
     display: none;
  }
+
+ .home-social{
+   justify-self: center;
+}
     
 }
 
