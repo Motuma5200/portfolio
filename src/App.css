@@ -42,7 +42,7 @@
 
   --z-tooltip: 10;
   --z-fixed: 100;
-  --z-moel: 1000;  
+  --z-model: 1000;  
 
 }
 
@@ -104,7 +104,7 @@ img{
 
 
 .section{
-  padding: 6rem 0 5rem;
+  padding: 6rem 1rem 5rem;
   
 }
 

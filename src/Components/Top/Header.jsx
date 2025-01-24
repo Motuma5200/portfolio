@@ -38,9 +38,16 @@ function Header() {
                     </li>
 
                     <li className="nav-item">
-                        <a href="#Portfolio" className="nav-link">
+                        <a href="#project" className="nav-link">
                             <i className="uil uil-scenery nav__icon"></i>
-                            Portfolio
+                            Projects
+                        </a>
+                    </li>
+
+                    <li className="nav-item">
+                        <a href="#testimonal" className="nav-link">
+                            <i className="uil uil-scenery nav__icon"></i>
+                            Testimonial
                         </a>
                     </li>
 

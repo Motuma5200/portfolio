@@ -47,9 +47,9 @@
 /*  Active menu*/
 
 .nav-link:hover{
-    color: green;
-    font-weight: 500px;
-
+    color: rgb(0, 0, 0);
+    font-weight: 700px;
+  font-size: larger;
 }
 
 

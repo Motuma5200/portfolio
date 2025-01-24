@@ -1,0 +1,53 @@
+.testimonal__container{
+    width: 750px;
+   
+}
+
+.testimonal__card{
+    background-color: var(--container-color);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    margin-bottom: var(--mb-2);
+    border-radius: 1.5rem;
+    height: 200px;
+    
+}
+.testimonal__img{
+    width: 60px;
+    border-radius: 3rem;
+    margin-bottom: var(--mb-0-75);
+}
+
+.testimonal__name{
+    font-size: var(--normal-font-size);
+    font-weight: 600;
+    margin-bottom: var(--mb-0-5);
+    
+}
+
+
+@media screen and (max-width: 992px) {
+
+
+  }
+  
+  @media screen and (max-width: 768px) {
+  
+
+    .testimonal__container{
+        width: 650px;
+       
+    }
+   
+  }
+  
+  @media screen and (max-width: 576px) {
+  
+  
+  }
+  
+  
+  @media screen and (max-width: 350px) {
+
+  }
+
