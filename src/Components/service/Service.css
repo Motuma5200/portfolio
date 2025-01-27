@@ -13,19 +13,35 @@
     border-radius: 1rem;
 }
 
+#dark .services__content{
+    background-color: rgb(46, 42, 42);
+   }
+  
+   .service__header{
+    display: flex;
+   }
+
 .services_icon{
-    display: block;
+
     font-size: 2rem;
     color: var(--tittle-color);
     margin-bottom: var(--mb-1);
-
 }
+
+#dark .services_icon{
+    color: aliceblue;
+   }
 
 .service__tittle{
     font-size: var(--h3-font-size);
     margin-bottom: var(--mb-1);
+    margin-left: var(--mb-1-5);
     font-weight: 500px;
 }
+
+#dark .service__tittle{
+    color: aliceblue;
+   }
 
 
 .service__button{
@@ -36,6 +52,10 @@
     column-gap: 0.4rem;
     cursor: pointer;
 }
+
+#dark .service__button{
+    color: aliceblue;
+   }
 
 .services__button-icon{
     font-size: 1rem;

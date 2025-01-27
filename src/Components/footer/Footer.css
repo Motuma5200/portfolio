@@ -1,10 +1,8 @@
 .footer{
   
-    background-color: var(--container-color);
+   
     border-top: 1.5px solid rgba(0, 0, 0, 0.1);
     padding: 2rem 0 1rem;
-    border-top-right-radius: 2rem;
-    border-top-left-radius: 2rem;
 
 }
 
@@ -22,6 +20,10 @@
     color: var(--tittle-color);
     
 }
+
+#dark .footer__tittle, .footer__link{
+    color: aliceblue;
+   }
 
 .footer__tittle{
     text-align: center;
@@ -50,6 +52,11 @@
     font-size: 2rem;
 }
 
+#dark .footer__social-icon .uil-linkedin{
+   color: aliceblue;
+
+   }
+
 .footer__social-link:hover{
     color: var(--tittle-color-dark);
 }
@@ -60,6 +67,10 @@
     grid-column: 1/3;
     margin-bottom: var(--mb-1-5);
 }
+
+#dark .footer__copy{
+    color: aliceblue;
+   }
 
 
 @media screen and (max-width: 992px) {

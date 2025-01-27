@@ -1,0 +1,131 @@
+.project__container{
+    grid-template-columns: repeat(  3, 1fr);
+ 
+}
+
+.project__cards{
+    background-color: var(--container-color);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 1rem;
+    padding: 1rem;
+    transition: transform 0.5s ease;
+    position: relative;
+}
+
+
+
+#dark .project__cards{
+    background-color: rgb(46, 42, 42);
+   }
+
+.project__cards:hover{
+    transform: scale(1.1);
+}
+
+.project__img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+
+    border-radius: 4px;
+    margin-bottom: var(--mb-1);
+   
+}
+
+.project__tittle{
+    text-align: center;
+    font-size: var(--normal-font-size);
+    font-weight: 600;
+    margin-bottom: var(--mb-0-75);
+}
+
+#dark .project__tittle{
+    color: aliceblue;
+   }
+
+.project__description{
+    color: var(--text-color);
+    margin-bottom: var(--mb-1);
+}
+
+.project__link{
+    color: var(--text-color);
+    font-size: var(--small-font-size);
+    position: absolute;
+    left: 60%;
+    bottom: 5rem;
+    font-weight: bold;
+}
+
+#dark .project__description{
+    color: aliceblue;
+   }
+
+.button__group{
+    display: flex;
+    justify-content: flex-end;
+    column-gap: 1rem;
+}
+
+.likes__button{
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 22px;
+    margin-top: var(--mb-1);
+    background-color: rgb(241, 241, 239);
+    
+}
+
+
+.like__control{
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    padding: 5px;
+}
+
+.like__button{
+    padding: 3px;
+    font-weight: bold;
+}
+
+.disLike__button{
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding: 5px;
+}
+
+.like__control:hover{
+    background-color: azure;
+}
+
+.disLike__button:hover{
+    background-color: azure;
+}
+
+
+@media screen and (max-width: 992px) {
+
+    .project__container{
+        grid-template-columns: repeat( 2, 1fr);
+        padding: 1.5rem;
+     
+    }
+    
+  }
+  
+  @media screen and (max-width: 768px) {
+  
+   
+  }
+  
+  @media screen and (max-width: 576px) {
+
+  
+  
+  }
+  
+  
+  @media screen and (max-width: 350px) {
+  
+
+  }

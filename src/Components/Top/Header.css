@@ -1,11 +1,20 @@
 .header{
-    width: 100%;
+    width: 90%;
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     z-index: var(--z-fixed);
     background-color: var(--body-color);
+   }
+
+   #dark .header{
+    background-color: rgb(51, 62, 62);
+    
+   }
+
+   #dark .nav-link{
+    color: aliceblue;
    }
 
    .nav{
@@ -49,7 +58,11 @@
 .nav-link:hover{
     color: rgb(0, 0, 0);
     font-weight: 700px;
-  font-size: larger;
+    font-size: larger;
+}
+
+.active-link .nav-link{
+    font-size: larger;
 }
 
 
@@ -86,7 +99,7 @@
     .nav-list{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        gap: 2rem;
+        gap: 1rem;
     }
 
     .nav__icon{

@@ -41,8 +41,11 @@ function Testimonal() {
              {Data.map(({id, image, tittle, description}) =>{
                 return(
                     <SwiperSlide className="testimonal__card" key={id}>
-                        <img src={image} alt="" className="testimonal__img" />
-                        <h3 className="testimonal__name">{tittle}</h3>
+                      <div className="testimonal__header">
+                      <img src={image} alt="" className="testimonal__img" />
+                      <h3 className="testimonal__name">{tittle}</h3>
+                      </div>
+                        
                         <p className="testimonal__description">{description}</p>
                     </SwiperSlide>
                 )

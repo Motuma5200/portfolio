@@ -7,21 +7,21 @@ export const Data = [
     {
         id: 1, 
         image: Image1,
-        tittle: "Motuma Rabuma",
+        tittle: "Chaltu Gadisa",
         description: "Motuma's commitment to delivering high-quality work and his impressive skill set have been instrumental in our achievements."
     }
      ,
      {
         id: 2, 
         image: Image2,
-        tittle: "Motuma Rabuma",
+        tittle: "Jiranus Motuma",
         description: "Motuma's exceptional communication skills and unwavering passion make him a standout in any team."
     }
     ,
     {
         id: 3, 
         image: Image3,
-        tittle: "Motuma Rabuma",
+        tittle: "Kuma Tolasa",
         description: "Motuma's profound understanding of system thinking enables him to see the bigger picture and make strategic decisions."
     }
     ,

@@ -1,0 +1,66 @@
+/* Container for the repository cards */
+.repo__container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  /* Individual repository card styles */
+  .repo {
+    flex: 0 0 30%;
+    scroll-snap-align: start;
+    background-color:var(--container-color);
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+
+  #dark .repo{
+    background-color: rgb(46, 42, 42);
+    color: aliceblue;
+  }
+  
+  /* Hover effect for repository cards */
+  .repo:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Repository header styles */
+  .repo-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+  #dark  .repo-header a{
+    color: aliceblue;
+  }
+  
+  /* Avatar styles */
+  .avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  @media screen and (max-width: 768px) {
+
+ 
+  }
+  
+  @media screen and (max-width: 576px) {
+    .repo__container {
+        grid-template-columns: repeat(2, 1fr);
+      }
+  
+  }
+  
+  
+  @media screen and (max-width: 350px) {
+  
+    .container{
+      margin-left: var(--mb-1);
+      margin-right: var(--mb-1);
+    }
+  }

@@ -93,7 +93,7 @@ function Contact() {
                 <div className="submit-control">
                 <input type="submit" className='contact__form-submit' 
                 name="submit__button" value="Send"/>
-                <p id="comment_text_counter"> {countLeft} words left </p>
+                <p className='count__left' id="comment_text_counter"> {countLeft} words left </p>
 
                 </div>
 

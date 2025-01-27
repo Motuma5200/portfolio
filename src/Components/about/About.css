@@ -4,6 +4,11 @@
     column-gap: 4rem;
   }
 
+  #dark .about-container{
+    color: aliceblue;
+   }
+
+
   .about-img{
     width: 350px;
     border-radius: 1.4rem;
@@ -18,6 +23,14 @@
 
   }
 
+  .cv__button{
+    background-color: rgba(46, 42, 42, 0.472);
+    color: white;
+    padding: 5px;
+    border-radius: 3px;
+    font-weight: 700;
+  }
+
   .about-box{
     background-color: var(--container-color);
     border: 1px solid rgb(0, 0, 0, 0.1);
@@ -26,16 +39,29 @@
     padding: 1rem 1.25rem;
   }
 
+  #dark .about-box{
+    background-color: rgb(46, 42, 42);
+   }
+
   .about-icon{
     font-size: 1.5rem;
     color: var(--tittle-color);
     margin-bottom: var(--mb-0-5);
   }
 
+  #dark .about-icon{
+    color: aliceblue;
+   }
+
   .about-tittle{
     font-size: var(--normal-font-size);
     font-weight: 500px;
   }
+
+  #dark .about-tittle{
+    color: aliceblue;
+   }
+
 
   .about-subtittle{
     font-size: 0.725rem;

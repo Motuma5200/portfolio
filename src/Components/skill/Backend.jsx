@@ -11,7 +11,11 @@ function Backend() {
             <i class="uil uil-cloud-question"></i>
                 <div >
                     <h3 className="skill-name">PHP</h3>
-                    <span className="skill-level">Basics</span>
+                    <div className="skill__bar">
+                            <span className="skill__perc php">
+                                <span className="tooltip">40%</span>
+                            </span>
+                        </div>
                 </div>
             </div>
 
@@ -19,7 +23,11 @@ function Backend() {
             <i class="uil uil-cloud-question"></i>
                 <div >
                     <h3 className="skill-name">Node js</h3>
-                    <span className="skill-level">Basics</span>
+                    <div className="skill__bar">
+                            <span className="skill__perc nodejs">
+                                <span className="tooltip">50%</span>
+                            </span>
+                        </div>
                 </div>
             </div>
 
@@ -27,7 +35,11 @@ function Backend() {
             <i class="uil uil-cloud-question"></i>
                 <div >
                     <h3 className="skill-name">Python</h3>
-                    <span className="skill-level">Intermediate</span>
+                    <div className="skill__bar">
+                            <span className="skill__perc python">
+                                <span className="tooltip">55%</span>
+                            </span>
+                        </div>
                 </div>
             </div>
 
@@ -35,7 +47,11 @@ function Backend() {
             <i class="uil uil-cloud-question"></i>
                 <div >
                     <h3 className="skill-name">SQL Server</h3>
-                    <span className="skill-level">Intermediate</span>
+                    <div className="skill__bar">
+                            <span className="skill__perc splserver">
+                                <span className="tooltip">75%</span>
+                            </span>
+                        </div>
                 </div>
             </div>
 

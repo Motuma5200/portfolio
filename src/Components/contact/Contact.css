@@ -26,16 +26,32 @@
     text-align: center;
 }
 
+#dark .contact__card{
+    background-color: rgb(46, 42, 42);
+   }
+
 .contact__card-icon{
     font-size: 2rem;
     color: var(--tittle-color);
     margin-bottom: var(--mb-0-25);
 }
 
+#dark .contact__card-icon{
+    color: aliceblue;
+   }
+
 .contact__card-tittle, 
 .contact__card-data{
     font-size: var(--small-font-size);
 }
+
+#dark .contact__card-data{
+    color: aliceblue;
+   }
+
+ #dark .contact__card-tittle  {
+    color: aliceblue;
+ }
 
 
 .contact__card-data{
@@ -46,6 +62,11 @@
 .contact__button{
     font-size: var(--small-font-size);
 }
+
+#dark .contact__button{
+    color: aliceblue;
+   }
+
 
 .contact__button:hover .contact__button-icon{
     transform: translate(0.35rem);
@@ -76,6 +97,10 @@
     outline: none;
 }
 
+#dark .contact__card-icon{
+    color: aliceblue;
+   }
+
 .contact__form-tag{
     position: absolute;
     top: -0.95rem;
@@ -85,6 +110,10 @@
     z-index: 1;
 }
 
+#dark .contact__form-tag{
+    color: aliceblue;
+    background-color:  rgb(51, 62, 62);;
+   }
 .contact__form-comment{
     height: 11rem;
 }
@@ -99,13 +128,24 @@
 }
 
 .contact__form-submit{
-    padding: 0.25rem 1rem;
-    background-color: rgba(28, 45, 35, 0.3);
+    background-color: rgba(46, 42, 42, 0.472);
+    color: white;
+    padding: 5px;
+    border-radius: 3px;
+    font-weight: 700;
     border: none;
-    border-radius: 1rem;
-    font-size: var(--normar-font-size);
+    
+    cursor: pointer;
 }
 
+
+#dark .contact__form-submit{
+    color: aliceblue;
+    background-color: rgb(46, 42, 42);
+   }
+#dark .count__left{
+    color: aliceblue;
+   }
 
   
   @media screen and (max-width: 768px) {

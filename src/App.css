@@ -79,6 +79,32 @@ body{
   background-color: var(--body-color);
   color: var(--text-color);
 }
+  /* Adjust Theme of th ap*/
+
+  #light{
+    background-color:  var(--body-color);
+  }
+
+  #dark{
+    background-color: rgb(51, 62, 62);
+ 
+  }
+
+
+  .themeButton{
+    position: fixed;
+    top: 6%;
+    right: 6%;
+    z-index: 200;
+    font-size: 22px;
+    background-color: var(--body-color);
+    border-radius: 50%;
+    padding-left: 2px;
+    padding-right: 2px;
+  }
+
+
+
 h1,h2,h3{
   color: var(--tittle-color);
   font-weight: var(--font-semi-bold);
@@ -122,6 +148,10 @@ img{
 .section-tittle, .section-subtittle{
   text-align: center;
 }
+
+#dark .section-tittle, .section-subtittle{
+  color: aliceblue;
+ }
 
 
 .container{

@@ -7,11 +7,16 @@ function Frontend() {
 
         <div className="skills-box">
             <div className="skills-group">
-                <div className="skills-data">
+                <div className="skills-data HTML-skill">
                 <i class="uil uil-cloud-question"></i>
                     <div >
                         <h3 className="skill-name">HTML</h3>
-                        <span className="skill-level">Intermediate</span>
+                        <div className="skill__bar">
+                            <span className="skill__perc html">
+                                <span className="tooltip">80%</span>
+                            </span>
+                        </div>
+
                     </div>
                 </div>
 
@@ -19,7 +24,11 @@ function Frontend() {
                 <i class="uil uil-cloud-question"></i>
                     <div >
                         <h3 className="skill-name">CSS</h3>
-                        <span className="skill-level">Intermediate</span>
+                        <div className="skill__bar">
+                            <span className="skill__perc css">
+                                <span className="tooltip">65%</span>
+                            </span>
+                        </div>
                     </div>
                 </div>
 
@@ -27,7 +36,11 @@ function Frontend() {
                 <i class="uil uil-cloud-question"></i>
                     <div >
                         <h3 className="skill-name">JavaScript</h3>
-                        <span className="skill-level">Intermediate</span>
+                        <div className="skill__bar">
+                            <span className="skill__perc javascript">
+                                <span className="tooltip">60%</span>
+                            </span>
+                        </div>
                     </div>
                 </div>
 
@@ -35,7 +48,11 @@ function Frontend() {
                 <i class="uil uil-cloud-question"></i>
                     <div >
                         <h3 className="skill-name">Bootstrap</h3>
-                        <span className="skill-level">Intermediate</span>
+                        <div className="skill__bar">
+                            <span className="skill__perc bootstrap">
+                                <span className="tooltip">70%</span>
+                            </span>
+                        </div>
                     </div>
                 </div>
 
@@ -43,7 +60,11 @@ function Frontend() {
                 <i class="uil uil-cloud-question"></i>
                     <div >
                         <h3 className="skill-name">React</h3>
-                        <span className="skill-level">Intermediate</span>
+                        <div className="skill__bar">
+                            <span className="skill__perc react">
+                                <span className="tooltip">75%</span>
+                            </span>
+                        </div>
                     </div>
                 </div>
 

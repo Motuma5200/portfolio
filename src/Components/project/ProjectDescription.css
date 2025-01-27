@@ -1,0 +1,62 @@
+.paragraph-container {
+    position: relative;
+    max-height: 200px; /* Adjust the height as needed */
+    overflow: hidden;
+    transition: max-height 0.3s ease; /* Smooth transition */
+  }
+  
+  .paragraph {
+    margin: 0; /* Remove default margin */
+  }
+
+  #dark .paragraph{
+    color: aliceblue;
+   }
+  
+  .paragraph.expanded {
+    max-height: none; /* Allow full height when expanded */
+  }
+  
+  .view-more {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin-top: 10px;
+    color: rgb(85, 85, 142);
+    cursor: pointer;
+  }
+
+  #dark .view-more{
+    color: rgb(184, 191, 197);
+    font-weight: bold;
+   }
+
+  
+@media screen and (max-width: 992px) {
+
+}
+
+@media screen and (max-width: 768px) {
+  .paragraph-container {
+
+    max-height: 80px; /* Adjust the height as needed */
+
+  }
+
+ 
+}
+
+@media screen and (max-width: 576px) {
+
+
+}
+
+
+@media screen and (max-width: 350px) {
+
+  .container{
+    margin-left: var(--mb-1);
+    margin-right: var(--mb-1);
+  }
+}

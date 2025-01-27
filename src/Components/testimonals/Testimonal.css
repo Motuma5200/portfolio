@@ -12,6 +12,16 @@
     height: 200px;
     
 }
+
+#dark .testimonal__card{
+    background-color: rgb(46, 42, 42);
+   }
+
+
+.testimonal__header{
+    display: flex;
+    align-items: flex-end;
+}
 .testimonal__img{
     width: 60px;
     border-radius: 3rem;
@@ -22,8 +32,17 @@
     font-size: var(--normal-font-size);
     font-weight: 600;
     margin-bottom: var(--mb-0-5);
+    padding: 2rem;
     
 }
+
+#dark .testimonal__name{
+    color: aliceblue;
+   }
+
+   #dark .testimonal__description{
+    color: aliceblue;
+   }
 
 
 @media screen and (max-width: 992px) {

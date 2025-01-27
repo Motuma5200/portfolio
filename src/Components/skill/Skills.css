@@ -7,42 +7,167 @@
 .skills-content{
     background-color: var(--container-color);
     border: 1px solid rgb(0, 0, 0, 0.1);
-    padding: 2rem 4rem;
+    padding: 2rem;
     border-radius: 1.25rem;
+    transition: transform 0.5s ease;
+}
+#dark .skills-content{
+    background-color: rgb(46, 42, 42);
+   }
+
+.skills-content:hover{
+    transform: scale(1.05);
 }
 
 .skills-tittle{
     font-size: var(--normal-font-size);
     margin-bottom: var(--mb-1-5);
-    font-weight: 500px;
+    font-weight: 600px;
     text-align: center;
 }
+
+#dark .skills-tittle{
+    color: aliceblue;
+   }
 
 .skills-group{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     column-gap: 2.5rem;
     row-gap: 2rem;
+    width: 100%;
 }
 
 .skills-data{
     display: flex;
     column-gap: 0.5rem;
+    width: 100%;
+   
 }
+
+
 
 .skills .uil-cloud-question{
     font-size: 1.5rem;
     color: var(--tittle-color);
 }
 
+#dark .skills .uil-cloud-question{
+    color: aliceblue;
+   }
+
 .skill-name{
     font-size: var(--normal-font-size);
     font-weight: 500px;
 }
 
+#dark .skill-name{
+    color: aliceblue;
+   }
+
 .skill-level{
 
     font-size: var(--tiny-font-size);
+}
+
+.skill__bar{
+    width: 120px;
+    height: 10px;
+    background-color: aqua;
+    border-radius: 10px;
+    margin-top: var(--mb-1-5);
+}
+
+.skill__perc{
+    position: relative;
+    display: block;
+    height: 100%;
+    width: 95%;
+    border-radius: 10px;
+    background-color: blue;
+    opacity: 0;
+
+    animation: progress 0.4s ease-in-out forwards;
+}
+
+.skill__perc.html{
+    width: 80%;
+    animation-delay: 0.1s;
+}
+
+.skill__perc.css{
+    width: 65%;
+    animation-delay: 0.2s;
+}
+
+.skill__perc.javascript{
+    width: 60%;
+    animation-delay: 0.3s;
+}
+
+.skill__perc.bootstrap{
+    width: 65%;
+    animation-delay: 0.4s;
+}
+
+.skill__perc.react{
+    width: 70%;
+    animation-delay: 0.5s;
+}
+
+.skill__perc.php{
+    width: 40%;
+    animation-delay: 0.1s;
+}
+
+.skill__perc.nodejs{
+    width: 50%;
+    animation-delay: 0.2s;
+}
+
+.skill__perc.python{
+    width: 55%;
+    animation-delay: 0.3s;
+}
+
+.skill__perc.splserver{
+    width: 75%;
+    animation-delay: 0.4s;
+}
+
+@keyframes progress{
+    0%{
+        width: 0%;
+        opacity: 1;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.tooltip{
+    position: absolute;
+    right: -10px;
+    top: -22px;
+    font-size: 11px;
+    padding: 2px 1px;
+    border-radius: 2px;
+    z-index: 1;
+    background-color: blue;
+    color: white;
+    font-weight: 500;
+}
+
+.tooltip::before{
+    content: '';
+    position: absolute;
+    left: 30%;
+    width: 10px;
+    height: 10px;
+    bottom: -3px;
+    transform: rotate(45deg);
+    background-color: blue;
+    z-index: -1;
 }
 
 

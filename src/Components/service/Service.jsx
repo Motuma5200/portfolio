@@ -16,7 +16,7 @@ function Service() {
 
         <div className="services__container container grid">
           <div className="services__content">
-            <div>
+            <div className = 'service__header'>
               <i className="uil uil-arrow services_icon"></i>
               <h2 className="service__tittle">UX/UI <br/> Designer</h2>
             </div>
@@ -63,7 +63,7 @@ function Service() {
           </div>
 
           <div className="services__content">
-            <div>
+            <div className='service__header'>
               <i className="uil uil-web-grid services_icon"></i>
               <h2 className="service__tittle">Product <br/> Designer</h2>
             </div>
@@ -114,7 +114,7 @@ function Service() {
 
 
           <div className="services__content">
-            <div>
+            <div className= 'service__header'>
               <i className="uil uil-edit services_icon"></i>
               <h2 className="service__tittle">Visual <br/> designer</h2>
             </div>

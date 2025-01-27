@@ -1,66 +1,63 @@
 import React, { useState } from 'react'
 import './Project.css'
 
-import Image1 from '../../assets/testimonal1.jpg'
-import Image2 from '../../assets/testimonal2.jpg'
-import Image3 from '../../assets/testimonal3.jpg'
-import Image4 from '../../assets/testimonal4.jpg'
+import { Projects } from './Projects'
 
 function Project() {
-        const [likeNumber, setLikeNumber] = useState(0)
 
-        const handleLike =() =>{
-              setLikeNumber(likeNumber + 1);
-        }
+        const [projects, setProjects] = useState(Projects)
 
-        const handleDisLike = () => {
-            if(likeNumber>0){
-                setLikeNumber(likeNumber - 1);
-            }
-        }
+        const handleLike = (id) =>{
+            setProjects((prevProjects) =>
+             prevProjects.map((project) =>
+            project.id ===  id ? {...project, like: project.like + 1} : project
+        )
+    );
+        };
+
+        const handleDisLike = (id) =>{
+            setProjects((prevProjects) =>
+             prevProjects.map((project) =>
+            project.id ===  id && project.like > 0? {...project, like: project.like - 1} : project
+        )
+    );
+        };
+
+       
 
   return (
     <section className="section project" id="project">
         <h1 className="section-tittle">Projects</h1>
         <span className="section-subtittle">My Recent Projects</span>
 
-        <div className="project__container">
+        <div className="project__container grid container">
+            {
+                projects.map(({id, image, tittle, description, link, like})=>
+                (
+                    <div className="project__cards" key={id}>
+                        <img src= {image} alt="" className="project__img" />
+                        <h3 className="project__tittle">{tittle}</h3>
+                         <p className="project__description">{description}</p>
+                         <div><a href={link} target='blank' className="project__link">View More</a></div>
+                         
+                        <div className="button__group">
+                            <span className="likes__button">
+                                <button className="like__control">
+                                <span onClick={() =>handleLike(id)} className="like__button">like</span>
+                                <span className="like__button">{like}</span>
+                                </button>
+                            <button onClick={ ()=> handleDisLike(id)} className="disLike__button">dislike</button>
 
-            <div className="project__card">
-                <img src={Image1}alt="" className="projet__img" />
-                <h3 className="project__tittle">School Website</h3>
-                <p className="project__description"></p>
-                <p className="project__feedback"><span onClick={handleLike} className="project__like"><i class="uil uil-thumbs-up"></i></span>
-                 <button>{likeNumber}</button>   <span onClick={handleDisLike}  className='project__dislike'> <i class="uil uil-thumbs-down"></i></span>
-                 </p>
-            </div>
+                            </span>
+                            
+                        </div>
 
-            <div className="project__card">
-                <img src={Image1}alt="" className="projet__img" />
-                <h3 className="project__tittle">Mobile UI Design</h3>
-                <p className="project__description"></p>
-                <p className="project__feedback"><span onClick={handleLike} className="project__like"><i class="uil uil-thumbs-up"></i></span>
-                 <button>{likeNumber}</button>   <span onClick={handleDisLike}  className='project__dislike'> <i class="uil uil-thumbs-down"></i></span>
-                 </p>
-            </div>
 
-            <div className="project__card">
-                <img src={Image1}alt="" className="projet__img" />
-                <h3 className="project__tittle">Youtube Video Edit</h3>
-                <p className="project__description"></p>
-                <p className="project__feedback"><span onClick={handleLike} className="project__like"><i class="uil uil-thumbs-up"></i></span>
-                 <button>{likeNumber}</button>   <span onClick={handleDisLike}  className='project__dislike'> <i class="uil uil-thumbs-down"></i></span>
-                 </p>
-            </div>
-
-            <div className="project__card">
-                <img src={Image1}alt="" className="projet__img" />
-                <h3 className="project__tittle"></h3>
-                <p className="project__description"></p>
-                <p className="project__feedback"><span onClick={handleLike} className="project__like"><i class="uil uil-thumbs-up"></i></span>
-                 <button>{likeNumber}</button>   <span onClick={handleDisLike} className='project__dislike'> <i class="uil uil-thumbs-down"></i></span>
-                 </p>
-            </div>
+                    </div>
+                )
+            )
+            }
+       
 
         </div>
     </section>
