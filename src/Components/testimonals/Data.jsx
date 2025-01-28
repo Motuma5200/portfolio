@@ -28,7 +28,7 @@ export const Data = [
     {
         id: 4, 
         image: Image4,
-        tittle: "Motuma Rabuma",
+        tittle: "Fayisa Firomsa",
         description: "Motuma's focus on user-friendly UI design and his implementation skills have made our applications more accessible and enjoyable for users."
     }    
 ]

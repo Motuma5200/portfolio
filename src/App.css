@@ -149,7 +149,11 @@ img{
   text-align: center;
 }
 
-#dark .section-tittle, .section-subtittle{
+#dark .section-tittle{
+  color: aliceblue;
+ }
+
+ #dark .section-subtittle{
   color: aliceblue;
  }
 

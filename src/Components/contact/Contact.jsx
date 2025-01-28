@@ -5,7 +5,7 @@ function Contact() {
 
     const [text, setText] = useState('');
     const [isDisabled, setIsDesabled] = useState(false);
-    const limitWord = 10;
+    const limitWord = 500;
     const [countLeft, setCountLeft] = useState(limitWord)
     
 
