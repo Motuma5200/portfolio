@@ -21,7 +21,11 @@
     
 }
 
-#dark .footer__tittle, .footer__link{
+#dark .footer__tittle{
+    color: aliceblue;
+   }
+
+   #dark .footer__link{
     color: aliceblue;
    }
 

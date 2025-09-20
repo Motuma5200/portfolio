@@ -49,7 +49,7 @@ function Contact() {
                         <h3 className="contact__card-tittle">Messenger</h3>
                         <span className="contact__card-data">Moti.123</span>
 
-                        <a href="https://m.me/motuma.rabuma" className="contact__button"> Write Me 
+                        <a href="https://m.me/motuma.rabuma" target='blank' className="contact__button"> Write Me 
                             <i className="bx bx-right-arrow-alt contact__button-icon"></i>
                         </a>
                     </div>

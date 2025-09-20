@@ -116,7 +116,7 @@
  }
 
 .home-img{
-    background-image: url(../../assets/moti.jpg);
+    background-image: url(../../assets/moa.JPG);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -124,7 +124,7 @@
     order: 1;
     justify-self: center;
     width: 400px;
-    height: 350px;
+    height: 400px;
     animation: profile-aniamation 10s ease-in-out infinite 2s;
 }
 
